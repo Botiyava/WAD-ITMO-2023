@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+        <title> {% block title %} Index {% endblock %}</title>
+        <h2>Information about me</h2>
+        <p>Hello, my name is {{ name }}. I'm first year student in Computer Systems Information Security. Now I'm growing as a SRE, because I really like to protect availability of complicated systems. In the future I would like to become a master of distributed systems</p>
+        <h2> Time before the deadline of the first homework: {{ time_before_deadline  }} </h2>
+  {% endblock %}
