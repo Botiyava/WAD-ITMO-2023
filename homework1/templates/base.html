@@ -2,15 +2,11 @@
 <html lang="en">
 <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
         <title> {% block title %} {% endblock %} of My Simple Flask Page</title>
-<style>
-nav a{
-        color: #d64161;
-        font-size: 2em;
-        margin-left: 50px;
-        text-decoration: none;
-}
-</style>
 </head>
 <body>
         <nav>

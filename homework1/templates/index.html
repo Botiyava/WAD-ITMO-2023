@@ -6,4 +6,53 @@
         <h2>Information about me</h2>
         <p>Hello, my name is {{ name }}. I'm first year student in Computer Systems Information Security. Now I'm growing as a SRE, because I really like to protect availability of complicated systems. In the future I would like to become a master of distributed systems</p>
         <h2> Time before the deadline of the first homework: {{ time_before_deadline  }} </h2>
+        <p>During this course I want to improve my practical skills in the following technologies:<p>
+        
+
+        <div class="tab">
+                <button class="tablinks" onclick="OpenDescription(event,'Python')" id="defaultOpen">Python</button>
+                <button class="tablinks" onclick="OpenDescription(event,'Flask')" id="flask" >Flask</button>
+                <button class="tablinks"  onclick="OpenDescription(event,'Docker')" id="docker">Docker</button>
+                <button class="tablinks" onclick="OpenDescription(event, 'Web')" id="web">Web Application Architecture</button>
+                <button class="tablinks" onclick="OpenDescription(event, 'DevOps')" id="devops">DevOps</button>
+        </div>
+        <div id="Python" class="tabcontent">
+               <h3>Python</h3>
+               <p>Some description here for Python</p>
+        </div>
+        <div id="Flask" class="tabcontent">
+                <h3>Flask</h3>
+                <p>Some description here for Flask</p>
+        </div>
+        <div id="Docker" class="tabcontent">
+                <h3>Docker</h3>
+                <p>Some description here for Docker</p>
+        </div>
+
+        <div id="Web" class="tabcontent">
+               <h3>Web Application Architecture</h3>
+               <p>Some description here for Web</p>
+        </div>
+                
+        <div id="DevOps" class="tabcontent">
+               <h3>DevOps</h3>
+               <p>Some description here for DevOps</p>
+        </div>
+        <script>
+                function OpenDescription(evt, techName){
+                        var i, tabcontent, tablinks;
+                        tabcontent = document.getElementsByClassName("tabcontent");
+                        for (i = 0; i < tabcontent.length; i++){
+                                tabcontent[i].style.display = "none";
+                        }
+                        tablinks = document.getElementsByClassName("tablinks");
+                        for (i = 0; i < tablinks.length; i++){
+                                tablinks[i].className = tablinks[i].className.replace("active", "");
+                        }
+                        document.getElementById(techName).style.display = "block";
+                        evt.currentTarget.className += "active";
+                }
+                document.getElementById("defaultOpen").click();
+        </script>
+        <img src="{{ url_for('static', filename="images/wad.jpeg") }}" align="middle" style="width:200px" />
   {% endblock %}
