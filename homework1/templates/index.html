@@ -5,7 +5,6 @@
         <title> {% block title %} Index {% endblock %}</title>
         <h2>Information about me</h2>
         <p>Hello, my name is {{ name }}. I'm first year student in Computer Systems Information Security. Now I'm growing as a SRE, because I really like to protect availability of complicated systems. To do so I need to understand what I'll protect. This Web Application Development course will give me strong understanding of how web applikations work.</p>
-        <h2> Time before the deadline of the first homework: {{ time_before_deadline  }} </h2>
         <br>
         <p>During this course I want to improve my practical skills in the following technologies:</p>
         
@@ -39,6 +38,10 @@
                <h3>DevOps</h3>
                <p>All things mentioned above will be very useful in DevOps career. In addition, working with a team project will give me extra experience and understanding of the process of developing some software in a friendly study environment. And the last, but not least - experience in coding in Vim :D</p>
         </div>
+        <br>
+        <div>
+        <h2> Time before the deadline of the first homework: {{ time_before_deadline  }} </h2>
+        </div>
         <script>
                 function OpenDescription(evt, techName){
                         var i, tabcontent, tablinks;
@@ -55,5 +58,4 @@
                 }
                 document.getElementById("defaultOpen").click();
         </script>
-        <img src="{{ url_for('static', filename="images/wad.jpeg") }}" align="middle" style="width:200px" />
   {% endblock %}
