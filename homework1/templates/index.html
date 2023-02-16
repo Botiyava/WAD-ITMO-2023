@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+        <title> {% block title %} Index {% endblock %}</title>
+        <h2>Information about me</h2>
+        <div class="description">
+                <p>Hello, my name is {{ name }}. I'm first year student in Computer Systems Information Security. Now I'm growing as a SRE, because I really like to protect availability of complicated systems. To do so, I need to understand what I'll protect. This Web Application Development course will give me strong understanding of how web applications work.</p>
+        </div>
+        <br>
+        <h3 class="coursetech">During this course I want to improve my practical skills in the following technologies:</h3>
+        
+
+        <div class="tab">
+                <button class="tablinks" onclick="OpenDescription(event,'Python')" id="defaultOpen">Python</button>
+                <button class="tablinks" onclick="OpenDescription(event,'Flask')" id="flask" >Flask</button>
+                <button class="tablinks"  onclick="OpenDescription(event,'Docker')" id="docker">Docker</button>
+                <button class="tablinks" onclick="OpenDescription(event, 'Web')" id="web">Web Application Architecture</button>
+                <button class="tablinks" onclick="OpenDescription(event, 'DevOps')" id="devops">DevOps</button>
+        </div>
+        <div id="Python" class="tabcontent">
+               <h3>Python</h3>
+               <p>Python is one of the most popular programming language in the world, but I avoided it for so long due to its speed, syntax and necessity to have dependencies everywhere. But knowledge of this skill is required in many DevOps/SRE positions. So, this is a good time to start learning it.</p>
+        </div>
+        <div id="Flask" class="tabcontent">
+                <h3>Flask</h3>
+                <p>Usually, I create my Web app as a Discord bots. It is useful for some alerting or statistics handling, but skill in creating my own website is pretty good. It can be used for creating my own profile page or custom dashboard. Flask is an easy way of creating that kind of things, it adds more motivation to learn Python.</p>
+        </div>
+        <div id="Docker" class="tabcontent">
+                <h3>Docker</h3>
+                <p>Docker is the de facto standard in containerization. It helps to deploy and run an application with all its dependencies, configurations and other requirements in one place. Having sound knowledge and experience about Docker is one of my professional priority. During this course, I believe I'll learn many best practices and advices about Docker and how to use it properly in real world.</p>
+        </div>
+
+        <div id="Web" class="tabcontent">
+               <h3>Web Application Architecture</h3>
+               <p>Even If I don't work as a web development, it is always good to have at least surface knowledge in Web Development, because in DevOps you will be a better specialist if you know the technologies you are working with. Deploying some <q>mysterious thing</q> on the server without its total understanding isn't the sign of a professional.</p>
+        </div>
+                
+        <div id="DevOps" class="tabcontent">
+               <h3>DevOps</h3>
+               <p>All things mentioned above will be very useful in DevOps career. In addition, working with a team project will give me extra experience and understanding of the process of developing some software in a friendly study environment. And the last, but not least - experience in coding in Vim :D</p>
+        </div>
+        <br>
+        <script>
+                function OpenDescription(evt, techName){
+                        var i, tabcontent, tablinks;
+                        tabcontent = document.getElementsByClassName("tabcontent");
+                        for (i = 0; i < tabcontent.length; i++){
+                                tabcontent[i].style.display = "none";
+                        }
+                        tablinks = document.getElementsByClassName("tablinks");
+                        for (i = 0; i < tablinks.length; i++){
+                                tablinks[i].className = tablinks[i].className.replace("active", "");
+                        }
+                        document.getElementById(techName).style.display = "block";
+                        evt.currentTarget.className += "active";
+                }
+                document.getElementById("defaultOpen").click();
+        </script>
+  {% endblock %}

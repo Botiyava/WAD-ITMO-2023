@@ -1,0 +1,185 @@
+body{
+        font-family: 'Source Sans Pro', sans-serif;
+}
+
+* {box-sizing: border-box}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h2 { 
+    color: #4c4a37;
+    font-family: 'Trocchi', serif;
+    font-size: 38px; 
+    font-weight: normal;
+    line-height: 48px;
+    margin: 0 0 4px 15px; 
+}
+
+p {
+        color: #4c4a37;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 18px; line-height: 25px;
+        margin: 0 0 24px 15px; 
+}
+
+.coursetech {
+        color: #4c4a37;
+        font-family: 'Trocchi', serif;
+        font-size: 38px; 
+        font-size: 20px; line-height: 20px;
+        margin: 0 0 24px 15px; 
+        font-weight: normal;
+        max-width: 600px;
+}
+
+div .description {
+        max-width: 400px;
+        min-width: 100px;
+}
+
+.logo {
+  float: left;
+}
+
+/* ~~ Top Navigation Bar ~~ */
+#navigation-container {
+  width: 1200px;
+  margin: 0 auto;
+  height: 110px;
+}
+
+.navigation-bar {
+  background-color: #99d9ea;
+  height: 113px;
+  width: 100%;
+  text-align: left;
+}
+
+.navigation-bar img{
+    float:left;
+}
+
+.navigation-bar ul {
+  padding: 20px;
+  margin: 0px;
+  text-align: center;
+  display:inline-block;
+  vertical-align:top;
+}
+
+.navigation-bar li {
+  list-style-type: none;
+  padding: 0px;
+  height: 24px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  display: inline;
+}
+
+.navigation-bar li a {
+  color: black;
+  font-size: 42px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  line-height: 70px;
+  padding: 5px 15px;
+  opacity: 0.7;
+}
+
+#menu {
+  float: right;
+}
+
+.tab {
+        float: left;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+        width: 15%;
+        height: 300px;
+}
+
+.tab button {
+        display: block;
+        background-color: inherit;
+        color: black;
+        padding: 22px 16px;
+        width: 100%;
+        border: none;
+        outline: none;
+        text-align: left;
+        cursor: pointer;
+        transition: 0.3;
+        font-size: 17px;
+}
+
+.tab button:hover {
+        background-color: #ddd;
+}
+
+.tab button.active {
+        background-color: #ccc;
+}
+
+.tabcontent {
+        float: left;
+        padding: 0px 12px;
+        border: 1px solid #ccc;
+        width: 40%;
+        border-left: none;
+        height: 348px;
+}
+.tabcontent h3 {
+    margin: 10px 0 0 15px;
+}
+button#defaultOpen{
+        background-image: url("../images/pythonwad.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+}
+button#flask{
+        background-image: url("../images/flaskwad.png");
+        color: white;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+}
+
+button#docker{
+        background-image: url("../images/dockerwad.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+}
+button#web{
+        background-image: url("../images/webwad.jpg");
+        color: white;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+}
+
+button#devops{
+        background-image: url("../images/devopswad.jpg");
+        color: black;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+}
+#page-container {
+  position: relative;
+  min-height: 150vh;
+}
+
+#content-wrap {
+  padding-bottom: 0.5rem;    /* Footer height */
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
+}
+
+.footer-text{
+        text-align: center;
+}
