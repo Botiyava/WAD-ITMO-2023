@@ -9,7 +9,9 @@
         <title> {% block title %} {% endblock %} of My Simple Flask Page</title>
 </head>
 <body>
-        <div class="navigation-bar">
+         <div id="page-container">
+            <div id="content-wrap">
+                <div class="navigation-bar">
                 <div id="navigation-container">
                 <img src="{{ url_for('static', filename="images/sre.jpg") }}" width="100"> 
       <ul>
@@ -21,6 +23,9 @@
         <div class="content">
         {% block content %} {% endblock %}
         </div>
+                </div>
+                <footer id="footer"><p class="footer-text">Copyright &copy; Leonid Shalaev</p><footer>
+            </div>
 </body>
 </html>
         
