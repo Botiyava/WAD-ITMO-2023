@@ -1,13 +1,72 @@
 body{
  font-family: 'Montserrat', sans-serif;
 }
+
 * {box-sizing: border-box}
-nav a{
-        color: #d64161;
-        font-size: 2em;
-        margin-left: 50px;
-        text-decoration: none;
+
+body {
+  margin: 0;
+  padding: 0;
 }
+
+div .description {
+        max-width: 400px;
+        min-width: 100px;
+}
+
+.logo {
+  float: left;
+}
+
+/* ~~ Top Navigation Bar ~~ */
+#navigation-container {
+  width: 1200px;
+  margin: 0 auto;
+  height: 110px;
+}
+
+.navigation-bar {
+  background-color: #99d9ea;
+  height: 113px;
+  width: 100%;
+  text-align: left;
+}
+
+.navigation-bar img{
+    float:left;
+}
+
+.navigation-bar ul {
+  padding: 20px;
+  margin: 0px;
+  text-align: center;
+  display:inline-block;
+  vertical-align:top;
+}
+
+.navigation-bar li {
+  list-style-type: none;
+  padding: 0px;
+  height: 24px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  display: inline;
+}
+
+.navigation-bar li a {
+  color: black;
+  font-size: 42px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  line-height: 70px;
+  padding: 5px 15px;
+  opacity: 0.7;
+}
+
+#menu {
+  float: right;
+}
+
 
 .tab {
         float: left;
@@ -77,3 +136,4 @@ button#devops{
         background-repeat: no-repeat;
         background-size: 100% 100%;
 }
+
