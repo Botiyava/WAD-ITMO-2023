@@ -1,7 +1,9 @@
 body{
  font-family: 'Montserrat', sans-serif;
 }
+
 * {box-sizing: border-box}
+
 body {
   margin: 0;
   padding: 0;
@@ -11,11 +13,12 @@ div .description {
         max-width: 400px;
         min-width: 100px;
 }
+
 .logo {
   float: left;
 }
-/* ~~ Top Navigation Bar ~~ */
 
+/* ~~ Top Navigation Bar ~~ */
 #navigation-container {
   width: 1200px;
   margin: 0 auto;
@@ -24,14 +27,15 @@ div .description {
 
 .navigation-bar {
   background-color: #99d9ea;
-  height: 110px;
+  height: 113px;
   width: 100%;
   text-align: left;
 }
 
 .navigation-bar img{
-float:left;
+    float:left;
 }
+
 .navigation-bar ul {
   padding: 20px;
   margin: 0px;
@@ -62,12 +66,7 @@ float:left;
 #menu {
   float: right;
 }
-nav a{
-        color: #d64161;
-        font-size: 2em;
-        margin-left: 50px;
-        text-decoration: none;
-}
+
 
 .tab {
         float: left;
