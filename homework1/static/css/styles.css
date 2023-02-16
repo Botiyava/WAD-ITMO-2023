@@ -1,5 +1,5 @@
 body{
- font-family: 'Montserrat', sans-serif;
+        font-family: 'Source Sans Pro', sans-serif;
 }
 
 * {box-sizing: border-box}
@@ -7,6 +7,32 @@ body{
 body {
   margin: 0;
   padding: 0;
+}
+
+h2 { 
+    color: #4c4a37;
+    font-family: 'Trocchi', serif;
+    font-size: 38px; 
+    font-weight: normal;
+    line-height: 48px;
+    margin: 0 0 4px 15px; 
+}
+
+p {
+        color: #4c4a37;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 18px; line-height: 25px;
+        margin: 0 0 24px 15px; 
+}
+
+.coursetech {
+        color: #4c4a37;
+        font-family: 'Trocchi', serif;
+        font-size: 38px; 
+        font-size: 20px; line-height: 20px;
+        margin: 0 0 24px 15px; 
+        font-weight: normal;
+        max-width: 600px;
 }
 
 div .description {
@@ -67,7 +93,6 @@ div .description {
   float: right;
 }
 
-
 .tab {
         float: left;
         border: 1px solid #ccc;
@@ -105,6 +130,9 @@ div .description {
         width: 40%;
         border-left: none;
         height: 348px;
+}
+.tabcontent h3 {
+    margin: 10px 0 0 15px;
 }
 button#defaultOpen{
         background-image: url("../images/pythonwad.png");
