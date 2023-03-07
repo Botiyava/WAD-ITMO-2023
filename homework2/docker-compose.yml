@@ -1,0 +1,37 @@
+version: '3.7'
+services:
+  flask:
+    build:
+      context: app
+      dockerfile: Dockerfile
+    image: hw2:latest 
+    container_name: flask
+    restart: unless-stopped
+    env_file:
+      - web.env
+    depends_on:
+      - mongodb
+    networks:
+      - backend
+    ports:
+      - "5000:5000"
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    restart: unless-stopped
+    command: mongod --auth
+    env_file:
+      - web.env
+    volumes:
+      - mongodbdata:/data/db
+      - ./init-mongo.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge
+
+volumes:
+  mongodbdata:
+    driver: local
